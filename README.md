@@ -32,19 +32,23 @@ ReactDOM.render(
 #### Run a simple server:
 - If you have python 2.x
   - `python -m SimpleHTTPServer`
-If you have python 3.x
- - `python -m http.server [<portNo>]`
-  ex:`python -m http.server 8080`
-If you want to use npm
-  - Install, if you haven't already, with `npm install -g http-server` (might need to run `sudo npm install -g http-server`)
-  - run `http-server -o`
+  
+- If you have python 3.x
+  - `python -m http.server [<portNo>]`
+    ex:`python -m http.server 8080`
+    
+- If you want to use npm
+    - Install, if you haven't already, with `npm install -g http-server` (might need to run `sudo npm install -g http-server`)
+    - run `http-server -o`
 
 Example Appearance:
 
 ![React App Started](https://i.imgur.com/xxeZCEW.png)
 
 
+
 ## Assign JSX to a variable
+
 Let's update our app to store our Store Name in a variable
 
 ```jsx
@@ -70,12 +74,12 @@ Let's put our store location as a variable
 
 ```jsx
 const location = "nyc"
-const storeName = const storeName = <h1 className="shop-name">React Roasts Coffee Shop, {location}</h1>
+const storeName = <h1 className="shop-name">React Roasts Coffee Shop, {location}</h1>
 ```
 
 ### Call a function inside our Expression
 
-```
+```jsx
 const formatLocation = location => {
   return location.toUpperCase();
 }
@@ -91,7 +95,7 @@ add an h2  with a tag line like `Our coffee will get your heart racing`
 
 Let's make a heading component. Here is a little code to get you started. We're copy pasting our multi-line jsx into our custom component. We have to add a return statement and wrap our code in `()` because it goes across multiple lines
 
-```
+```jsx
 class Heading extends React.Component {
   render(){
     return(
